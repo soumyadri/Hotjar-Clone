@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content="width= device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="files\styles.css">
+        <title>You privacy & Hotjar</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div id="pvc_pg">
+            <div id="clr">
+                <h1>Your privacy & Hotjar</h1>
+                <p>From day one, Hotjar was designed and built with privacy in mind. We wanted to help our customers improve their websites and create better user experiences, while keeping privacy at the core of our software—and we’ve been doing it since 2014.</p>
+                <p>Today, Hotjar is used on over 500,000 websites in 180+ countries. We believe we have a responsibility to set the example and protect not just the privacy of our customers, but also that of the people who visit their websites—in other words: you.</p>
+            </div>
+            <div id="clr">
+                <img src="https://static-cms.hotjar.com/documents/privacy-6.svg"/>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div id="pvc_pg">
+            <div id="full">
+                <h1>Improving websites, for you.</h1>
+                <p>Online businesses use Hotjar to create better website experiences.</p>
+                <button class="less"onclick="moreP()">More</button>
+            </div>
+            <div id="clr">
+                <img src="https://static-cms.hotjar.com/documents/privacy-7.svg"/>
+            </div>
+        </div>
+        <br/>
+        <div id="pvc_pg">
+            <div>
+                <h1>We record interactions, not your sensitive data.</h1>
+                <p>Hotjar is designed for websites to get insights. And respect your privacy.</p>
+                <button onclick="moreP()">More</button>
+            </div>
+            <div id="clr">
+                <img src="https://static-cms.hotjar.com/documents/privacy-5.svg"/>
+            </div>
+        </div>
+        <br/>
+        <div id="pvc_pg">
+            <div>
+                <h1>We will never share or sell your data.</h1>
+                <p>Not to advertisers. Not to third-party services. Not to anyone.</p>
+                <button onclick="moreP()">More</button>
+            </div>
+            <div id="clr">
+                <img src="https://static-cms.hotjar.com/documents/privacy-3.svg"/>
+            </div>
+        </div>
+        <br/>
+        <div id="pvc_pg">
+            <div>
+                <h1>Request and access your data, anytime.</h1>
+                <p>Your data is stored securely, and you can ask to see it whenever you want.</p>
+                <button onclick="moreP()">More</button>
+            </div>
+            <div id="clr">
+                <img src="https://static-cms.hotjar.com/documents/privacy-4.svg"/>
+            </div>
+        </div>
+        <br/>
+        <div id="pvc_pg">
+            <div>
+                <h1>Tracking: we'll always give you options.</h1>
+                <p>If you prefer websites not to track data about your visit, we can help.</p>
+                <button onclick="moreP()">More</button>
+            </div>
+            <div id="clr">
+                <img src="https://static-cms.hotjar.com/documents/privacy-1.svg"/>
+            </div>
+        </div>
+        <br/>
+        <div id="pvc_pg">
+            <div>
+                <h1>Compliance commitment: GDPR, CCPA, and more.</h1>
+                <p>Our customers can use Hotjar in a compliant manner, for you.</p>
+                <button onclick="moreP()">More</button>
+            </div>
+            <div id="clr">
+                <img src="https://static-cms.hotjar.com/documents/privacy-2.svg"/>
+            </div>
+        </div>
+        <div id="bar">
+            <h1>Questions? We’ve got you covered.</h1>
+            <p>From FAQs to in-depth resources - our help center has everything you need to know about Hotjar relating to privacy, compliance, legal, and security.</p>
+            <br/>
+            <div id="btnn">
+                <button>Take me there</button>
+            </div>
+        </div>
+        <script>
+            function moreP() {
+                var divs = document.getElementById("full")
+                var ps = document.createElement("p")
+                var btn = document.getElementsByClassName("less")
+                divs.style.background = "lavender";
+                divs.style.padding="2%"
+                ps.textContent = "Nobody wants to waste their time on a website that is confusing and hard to navigate.You know it, we know it, and website owners know it too—which is why they turn to Hotjar. Website owners use Hotjar to better understand user behavior: what actions people take on a website, what elements of a page they click or ignore, what they enjoy, where they struggle. With this insight, website owners can then make changes that improve the overall experience for all website users. And that includes you."
+                divs.appendChild(ps)
+                btn.remove()
+            }
+        </script>
+    </body>
+</html>
