@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width:90%;
+    margin: auto;
+    padding: 40px;
+}
+#guide {
+    width:100%;
+    margin:auto
+}
+#guide > div > img {
+    width: 100%;
+    height: 70px;
+    margin: auto;
+}
+#guide > h1 {
+    text-align: center;
+}
+#guide > p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+#heatmap {
+    display: flex;
+    margin:auto;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 100px;
+}
+#heatmap div:nth-child(1) {
+    background-color: rgb(250, 194, 204); 
+    width:50%;
+}
+#heatmap div:nth-child(2) {
+    margin: 50px;
+    width:50%
+}
+.p {
+    font-size: 16px;
+    padding:5px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.heading {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+#visit {
+    background-color: magenta;
+    border: 1px solid magenta;
+    width:220px;
+    padding: 3.5%;
+    margin-top:20px;
+    border-radius: 10px;
+    color:white;
+    font-size: 20px;
+}
+#grid img {
+    width: 100%;
+    height: 50%;
+}
+#grid {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    grid-gap:2%;
+}
+#grid > div {
+    height:460px;
+    width: 33%;
+}
+div > h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 0px;
+}
+#input {
+    height:250px;
+    margin:100px;
+    padding: 4% 5%;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#tab {
+    border: 1px solid white;
+    border-radius: 5px;
+    width:40%;
+    margin:20px;
+    padding: 20px;
+
+}
+#btn {
+    width: 10%;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    height:40px;
+    border-radius: 5px;
+}
+#grid2 img {
+    width: 100%;
+    height: 50%;
+}
+#grid2 {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    grid-gap:2.5%;
+}
+#grid2 > div {
+    height:380px;
+    width: 33%;
+}
+.article {
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    #grid {
+        display: block;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+    #heatmap {
+        display: block;
+        height: 800px;
+    }
+    #heatmap div:nth-child(1) {
+        background-color: rgb(250, 194, 204); 
+        width:100%;
+    }
+    #grid > div {
+        width:70%;
+        margin: auto;
+    }
+    #input {
+        height:300px;
+        margin:20px;
+        padding: 4% 3%;
+    }
+    #tab {
+        width:50%;
+    }
+    #btn {
+        width: 15%;
+    }
+    #grid2 {
+        display: block;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+    #grid2 > div {
+        width:70%;
+        margin: auto;
+    }
+}
+@media (max-width: 500px) {
+    * {
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        width:100%;
+    }
+    #grid {
+        display: block;
+        flex-direction: column;
+    }
+    #heatmap {
+        display: block;
+        height: 850px;
+    }
+    #heatmap div:nth-child(1) {
+        background-color: rgb(250, 194, 204); 
+        width:100%;
+    }
+    #grid > div {
+        width:80%;
+        margin: auto;
+    }
+    #input {
+        height:300px;
+        margin:20px;
+        padding: 3% 2%;
+    }
+    #tab {
+        width:55%;
+    }
+    #btn {
+        width: 20%;
+    }
+    #grid2 {
+        display: block;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+    #grid2 > div {
+        width:70%;
+        margin: auto;
+    }
+}
+#pvc_pg {
+    display: flex;
+    width: 100%;
+    height: 560px;
+}
+#pvc_pg > div{
+    width:50%;
+}
+#pvc_pg > div > img {
+    margin:6%;
+}
+#clr {
+    background-color: lavender;
+}
+#pvc_pg >div:nth-child(1){
+    padding-top:8%;
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5%;
+    padding-right: 10%;
+}
+#pvc_pg > div > h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+#pvc_pg > div > p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: darkslategrey;
+}
+#pvc_pg > div > button{
+    background-color: white;
+    border: 1px solid white;
+    width:50px
+}
+#bar {
+    width:100%;
+    height:250px;
+    background-color: gainsboro;
+    padding:3%
+}
+#bar > h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:10px;
+}
+#bar > p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+#bar >div > button {
+    background-color: black;
+    border-radius: 1px solid black;
+    color: white;
+    border-radius: 5px;
+    width:20%;
+    height:40px;
+    margin-left:40%
+}
