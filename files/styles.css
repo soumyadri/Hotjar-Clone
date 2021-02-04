@@ -212,7 +212,6 @@ li a, .dropbtn{
     color:rgb(202, 95, 166);
     background-color: transparent;
     border: rgb(238, 206, 211);
-    text-decoration: underline;
     text-align: left;
 }
 #second-div a{
@@ -221,7 +220,6 @@ li a, .dropbtn{
     margin: 1.5%;
     color:rgb(207, 150, 183);
     background-color: transparent;
-    text-decoration: underline;
     margin-top: 15%;
 }
 #second-div div{
@@ -292,16 +290,23 @@ li a, .dropbtn{
 
 /* table for marketers */
 #table-marketers{
+    margin: 3%;
     margin-left: 5%;
     display: grid;
-    grid-template-columns: 23% 23% 23% 20%;
+    grid-template-columns: 25% 25% 25% 17%;
     grid-gap: 2%;
 }
-#table-marketers #div-1{
+#table-marketers div{
     width: 90%;
+    border: 1px solid pink;
+    padding: 3%;
+    border-radius: 20px;
+}
+#table-marketers #div-4{
+    border: transparent;
 }
 #table-marketers img{
-    width: 90%;
+    width: 95%;
 }
 #table-marketers h3{
     color: dimgrey;
@@ -312,4 +317,181 @@ li a, .dropbtn{
     color: rgb(77, 74, 74);
     font-size: 20px;
     font-weight: 400;
+}
+
+
+
+/* scroler-div */
+#slider-h2-style{
+    font-size: 45px;
+    font-weight: 800;
+    color: darkcyan;
+    text-align: center;
+    margin: 5% auto;
+}
+#w3-heigth{
+    margin: 5%;
+    width: 90%;
+    height: 400px;
+}
+.mySlides {
+    display: none;
+}
+.mySlides img{
+   margin-left: 10%;
+   border: 2px dashed palevioletred;
+}
+.image-background-1{
+    background-image: url("https://static-cms.hotjar.com/original_images/testimonials-thumb-invision.jpg");
+}
+.image-background-2{
+    background-image: url("https://static-cms.hotjar.com/original_images/testimonials-thumb-reed.jpg");
+}
+.image-background-3{
+    background-image: url("https://static-cms.hotjar.com/original_images/testimonials-thumb-hubspot.jpg");
+}
+.image-background-4{
+    background-image: url("https://static-cms.hotjar.com/original_images/testimonials-thumb-hubspot.jpg");
+}
+
+
+#slideshow {
+    margin: 80px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .mySlides {
+      display: none;
+    }
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+/* image-logo */
+.image-logo-resize{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.h3-resize-logo{
+    font-size: 38px;
+    text-align: center;
+    margin: 3% auto;
+}
+
+
+/* last button id */
+#last-button-id{
+    width: 60%;
+    margin: 2% auto;
+    font-size: 30px;
+}
+#last-button-id h4{
+    width: 60%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 35px;
+}
+#last-button-id button{
+    font-size: 25px;
+    color: white;
+    margin-left: 40%;
+    background-color: palevioletred;
+    padding: 2%;
+    border-radius: 28px;
+}
+#last-button-id button:hover{
+    background-color: pink;
+}
+
+
+/* footer */
+#footer-div{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 23% 23% 23% 23%;
+    background-color: rgba(241, 241, 241, 0.459);
+    color: rgb(71, 18, 18);
+    padding-bottom: 2%;
+    margin-top: 1%;
+}
+#footer-div h6{
+    font-size: 25px;
+}
+#footer-div a{
+    font-size: 20px;
+    text-decoration: solid;
+    color: rgb(48, 46, 46);
+    margin-bottom: 20px;
+}
+#footer-div div{
+    margin-left: 25%;
+}
+#footer-div a:hover{
+    color: palevioletred;
+}
+.logo-p-footer{
+    text-align: center;
 }
