@@ -1,0 +1,33 @@
+#layout_1{
+    display: flex;
+    background-color: aliceblue;
+    gap: 60px;
+    height: 650px;
+}
+.paragraph_1,.paragraph_2,.paragraph_3{
+    padding: 70px;
+}
+.paragraph_1img,.paragraph_2img,.paragraph_3img{
+    padding: 80px;
+    
+}
+.paragraph_1>h1,.paragraph_2>h1,.paragraph_3>h1{
+    font-size: 60px;
+}
+.paragraph_1>p,.paragraph_2>p1,.paragraph_3>p1{
+    font-size: 22px;
+}
+#layout_2{
+    display: flex;
+    gap: 60px;
+    height: 650px;
+}
+#layout_4{
+    display: flex;
+    gap: 60px;
+    height: 650px;
+}
+#layout_5{
+    text-align: center;
+    margin-top: 70px;
+}
