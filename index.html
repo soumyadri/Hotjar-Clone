@@ -71,10 +71,12 @@
 
     <div id="content-first">
         <div id="first-div">
-            <img class="active-1" src="https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png" alt="">
-            <img class="active-2" src="https://static-cms.hotjar.com/original_images/prod-tour-recordings.png" style="display: none;" alt="">
-            <img class="active-3" src="https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png" style="display: none;" alt="">
-            <img class="active-4" src="https://static-cms.hotjar.com/original_images/prod-tour-polls.png" style="display: none;" alt="">
+            <div class="w3-content w3-display-container">
+                <img src="https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png" style="width:100%">
+                <!-- <img class="slides" src="https://static-cms.hotjar.com/original_images/prod-tour-recordings.png" style="width:100%">
+                <img class="slides" src="https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png" style="width:100%">
+                <img class="slides" src="https://static-cms.hotjar.com/original_images/prod-tour-polls.png" style="width:100%"> -->
+            </div>
         </div>
         <div id="second-div">
             <h3>Here's how it works</h3>
@@ -124,33 +126,143 @@
             <h3>Built for Marketers, Product Managers and UX Designers</h3>
         </div>
     </div>
+      
+
+    <div id="slider-show">
+        <h2 id="slider-h2-style">Happy Customers</h2>
+      <div class="mySlides fade">
+        <img src="https://static-cms.hotjar.com/original_images/testimonials-thumb-invision.jpg" style="width:80%">
+        <div class="text">Hello</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://static-cms.hotjar.com/original_images/testimonials-thumb-reed.jpg" style="width:80%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://static-cms.hotjar.com/original_images/testimonials-thumb-hubspot.jpg" style="width:80%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://static-cms.hotjar.com/original_images/testimonials-thumb-unbounce.jpg" style="width:80%">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+      </div>
+    </div>  
+
+    <div>
+        <h3 class="h3-resize-logo">Hotjar works out of the box most popular platforms</h3>
+        <img class="image-logo-resize" src="https://static-cms.hotjar.com/documents/brand-one-script_Twj5bMZ.svg" alt="">
+        <img class="image-logo-resize" src="https://static-cms.hotjar.com/original_images/brand-get-started.jpg" alt="">
+    </div>
+
+
+    <div id="last-button-id">
+        <h4>Get started with Hotjar today</h4>
+        <button>Try it free</button>
+    </div>
+
+
+    <div id="footer-div">
+        <div>
+            <h6>HotJar</h6>
+            <a href="#">Product tour</a><br><br>
+            <a href="#">Pricing</a><br><br>
+            <a href="#">Customer service</a><br><br>
+            <a href="#">Product Updates</a><br><br>
+            <a href="#">What is Hotjar?</a><br><br>
+            <a href="#">Status</a><br><br>
+            
+        </div>
+        <div>
+            <h6>Resources</h6>
+            <a href="#">Blog</a><br><br>
+            <a href="#">Guides</a><br><br>
+            <a href="#">Support documentation</a><br><br>
+            <a href="#">Heatmap handbook</a><br><br>
+            <a href="#">CRO action plan</a><br><br>
+            <a href="#">CX resources</a><br><br>
+        </div>
+        <div>
+            <h6>Compliances</h6>
+            <a href="#">Compliance, legal & security</a><br><br>
+            <a href="#">Terms of service</a><br><br>
+            <a href="#">Privacy policy</a><br><br>
+            <a href="#">Acceptable use policy</a><br><br>
+            <a href="#">Cookie info</a><br><br>
+            <a href="#">Cookie settings</a><br><br>
+        </div>
+        <div>
+            <h6>Company</h6>
+            <a href="#">About us</a><br><br>
+            <a href="#">careers</a><br><br>
+            <a href="#">Founding member</a><br><br>
+            <a href="#">Get Help</a><br><br>
+        </div>
+    </div>
+    <div id="copyrigth-footer">
+        <p class="logo-p-footer">Copyright © 2014 - 2021 Hotjar Ltd. All rights reserved.</p>
+    </div>
+    
+
+
+    
 
     <script>
 
+        var slideIndex = 0;
+        showSlides();
 
-        function funcmaps(){
-            document.querySelector('active-1').src='https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png';
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000);
         }
-        function funcrec(){
-            document.querySelector('.active-2').style.visibility = "visible"
-            document.querySelector('.active-2').src='https://static-cms.hotjar.com/original_images/prod-tour-recordings.png';
-            document.getElementById("active-1").style.src = "#";
-            document.getElementById("active-3").style.src = "#";
-            document.getElementById("active-4").style.src = "#";
+
+
+        var index = 0;
+        slides();
+
+        function slides() {
+          var i;
+          var slide = document.getElementsByClassName("slides");
+          for (i = 0; i < slide.length; i++) {
+            slide[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slide.length) {slideIndex = 1}    
+          slide[index-1].style.display = "block";  
+          dots[index-1].className += " active";
+          setTimeout(slides, 2000);
         }
-        function funcfeedback(){
-            document.getElementById("active-2").style.visibility = "hidden";
-            document.getElementById("active-1").style.visibility = "hidden";
-            document.getElementById("active-4").style.visibility = "hidden";
-            document.querySelector('.active-3').src='https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png';
-        }
-        function funcsurvey(){
-            document.querySelector('.active-4').src='https://static-cms.hotjar.com/original_images/prod-tour-polls.png';
-            document.getElementById("active-2").style.display = "none";
-            document.getElementById("active-3").style.display = "none";
-            document.getElementById("active-1").style.display = "none";
-        }
-        
+
+
+
     </script>    
 </body>
 </html>
