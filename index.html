@@ -71,20 +71,64 @@
 
     <div id="content-first">
         <div id="first-div">
-            <div id="active-1"><img src="https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png" alt=""></div>
-            <div id="active-1"><img src="https://static-cms.hotjar.com/original_images/prod-tour-recordings.png" alt=""></div>
-            <div id="active-1"><img src="https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png" alt=""></div>
-            <div id="active-1"><img src="https://static-cms.hotjar.com/original_images/prod-tour-polls.png" alt=""></div>
+            <img class="active-1" src="https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png" alt="">
+            <img class="active-2" src="https://static-cms.hotjar.com/original_images/prod-tour-recordings.png" style="display: none;" alt="">
+            <img class="active-3" src="https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png" style="display: none;" alt="">
+            <img class="active-4" src="https://static-cms.hotjar.com/original_images/prod-tour-polls.png" style="display: none;" alt="">
         </div>
         <div id="second-div">
-            <h3></h3>
-            <h4></h4>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <h3>Here's how it works</h3>
+            <h4>Behaviour</h4>
+            <div><img src="files\rigth_symbol.png" alt=""><button id="HeatMaps" onclick = "funcmaps()">HeatMaps</button></div>
+            <div><img src="files\rigth_symbol.png" alt=""><button id="Recording" onclick="funcrec()">Recordings</button></div>
+            <div><img src="files\rigth_symbol.png" alt=""><button id="Incoming Feedback" onclick="funcfeedback()">Incoming Feedback</button></div>
+            <div><img src="files\rigth_symbol.png" alt=""><button id="Surveys" onclick="funcsurvey()">Surveys</button></div>
             <a href="#">Full Product Tour</a>
         </div>
     </div>
+
+    <div id="company-partner">
+        <div><h3>Trusted by over 6,80,000 organizations across 184 countries</h3></div>
+        <div><img src="https://static-cms.hotjar.com/documents/company-logos-1_geXx9hR.svg" alt=""></div>
+    </div>
+
+    <div id="gd-cr">
+        <div>
+            <div><h4>GDPR and CCPA</h4></div>
+            <div><h6>Keeping end-user privacy at the centre what we do</h6></div>
+        </div>
+        <div>
+           <div><img src="https://static-cms.hotjar.com/documents/brand-GDPR-stars.svg" alt=""></div>
+           <div><img src="https://static-cms.hotjar.com/documents/brand-CCPA.svg" alt=""></div>
+        </div>
+    </div>
+
+    <script>
+
+
+        function funcmaps(){
+            document.querySelector('active-1').src='https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png';
+        }
+        function funcrec(){
+            document.querySelector('.active-2').style.visibility = "visible"
+            document.querySelector('.active-2').src='https://static-cms.hotjar.com/original_images/prod-tour-recordings.png';
+            document.getElementById("active-1").style.src = "#";
+            document.getElementById("active-3").style.src = "#";
+            document.getElementById("active-4").style.src = "#";
+        }
+        function funcfeedback(){
+            document.getElementById("active-2").style.visibility = "hidden";
+            document.getElementById("active-1").style.visibility = "hidden";
+            document.getElementById("active-4").style.visibility = "hidden";
+            document.querySelector('.active-3').src='https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png';
+        }
+        function funcsurvey(){
+            document.querySelector('.active-4').src='https://static-cms.hotjar.com/original_images/prod-tour-polls.png';
+            document.getElementById("active-2").style.display = "none";
+            document.getElementById("active-3").style.display = "none";
+            document.getElementById("active-1").style.display = "none";
+        }
+        
+    </script>    
 </body>
 </html>

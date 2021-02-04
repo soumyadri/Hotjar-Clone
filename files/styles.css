@@ -183,3 +183,109 @@ li a, .dropbtn{
     border-radius: 50px 100px;
 
 }
+
+
+/* content first */
+#content-first{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#second-div{
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+#second-div h3{
+    font-size: 35px;
+    color:rgb(63, 62, 62);
+    margin-bottom: 0;
+}
+#second-div h4{
+    font-size: 30px;
+    color:rgb(85, 85, 85);
+}
+#second-div button{
+    font-size: 20px;
+    padding: 2%;
+    margin: 2%;
+    color:rgb(202, 95, 166);
+    background-color: transparent;
+    border: rgb(238, 206, 211);
+    text-decoration: underline;
+    text-align: left;
+}
+#second-div a{
+    font-size: 18px;
+    padding: 2%;
+    margin: 1.5%;
+    color:rgb(207, 150, 183);
+    background-color: transparent;
+    text-decoration: underline;
+    margin-top: 15%;
+}
+#second-div div{
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    margin: 0.5% 2%;
+    font-size: 14px;
+    color: dimgray;
+    flex-grow: 1;
+}
+#second-div img{
+    width: 11%;
+    height: 37%;
+    padding-right: 5%;
+    margin-top: 14%;
+}
+
+
+/* company partner */
+#company-partner{
+    display: flex;
+    flex-direction: column;
+    color: rgb(114, 114, 114);
+    font-size: 30px;
+    font-weight: 700;
+    width: 70%;
+    margin: 2% auto;
+}
+#company-partner h3{
+    text-align: center;
+}
+
+
+
+/* gdpr & cccr */
+#gd-cr{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 5% auto;
+    background-color: #f0f0f0;
+    padding: 2% 5%;
+}
+#gd-cr > div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    color: rgb(85, 78, 78);
+    font-size: 30px;
+}
+#gd-cr > div:nth-child(1){
+    width: 90%;
+}
+#gd-cr > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+}
+#gd-cr h6{
+    font-size: 23px;
+    margin: 4%;
+}
+#gd-cr h4{
+    margin: 4%;
+}
