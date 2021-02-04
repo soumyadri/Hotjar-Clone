@@ -289,3 +289,27 @@ li a, .dropbtn{
 #gd-cr h4{
     margin: 4%;
 }
+
+/* table for marketers */
+#table-marketers{
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 20%;
+    grid-gap: 2%;
+}
+#table-marketers #div-1{
+    width: 90%;
+}
+#table-marketers img{
+    width: 90%;
+}
+#table-marketers h3{
+    color: dimgrey;
+    font-size: 26px;
+    font-weight: 600;
+}
+#table-marketers p{
+    color: rgb(77, 74, 74);
+    font-size: 20px;
+    font-weight: 400;
+}
