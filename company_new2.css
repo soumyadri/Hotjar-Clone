@@ -1,0 +1,103 @@
+.img1{
+    height: 500px;
+    width: 1600px;
+}
+#headline2_b{
+    text-align: center;
+    margin: 50px;
+}
+.headline1{
+    text-align: center;
+    margin-top: 50px;
+}
+.paragraph1{
+   margin-left: 200px;
+   font-size: 17px;
+}
+.img2{
+    height: 500px;
+    width: 1600px;
+    margin-top: 50px;
+}
+.headline2{
+    color: red;
+}
+#img3{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    background-size: 100% 100%;
+    box-shadow: 2px 2px 10px 5px blue;
+    animation:slider 9s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url("https://d27i7n2isjbnbi.cloudfront.net/careers/photos/36885/normal_photo_1500019409.JPG");}
+    18%{background-image: url("https://d27i7n2isjbnbi.cloudfront.net/careers/photos/79515/normal_photo_1535536765.jpg");}
+    33%{background-image: url("https://d27i7n2isjbnbi.cloudfront.net/careers/photos/23283/normal_photo_1483967938.jpg");}
+    48%{background-image: url("https://d27i7n2isjbnbi.cloudfront.net/careers/photos/23281/normal_photo_1483967892.jpg");}
+    63%{background-image: url("https://d27i7n2isjbnbi.cloudfront.net/careers/photos/79511/normal_photo_1535536725.jpg");}
+    78%{background-image: url("https://d27i7n2isjbnbi.cloudfront.net/careers/photos/79513/normal_photo_1535536737.jpg");}
+    95%{background-image: url("https://d27i7n2isjbnbi.cloudfront.net/careers/photos/36887/normal_photo_1500019701.JPG");}
+}
+#headline3{
+    text-align: center;
+    margin-top: 50px;
+}
+#video_1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#headline4{
+    margin-top: 50px;
+    text-align: center;
+}
+#img4{
+text-align: center;
+}
+#headline5{
+    margin-top: 50px;
+    text-align: center;
+}
+#img5{
+text-align: center;
+}
+#headline6{
+    text-align: center;
+    margin-top: 50px;
+}
+#join{
+    display: grid;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 30px;
+}
+#job{
+    display: flex;
+    border: 1px solid black;
+    padding: 15px;
+    justify-content: space-between;
+}
+.job_btn{
+    margin-top: 25px;
+    font-size: 25px;
+    border-radius: 20%;
+    background-color: red;
+    color: white;
+}
+.job_p{
+    color: red;
+}
+#headline7{
+    margin-top: 50px;
+    text-align: center;
+}
+#paragraph2{
+    margin-top: 50px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+#img6{
+    text-align: center;
+    margin-top: 100px;
+}
