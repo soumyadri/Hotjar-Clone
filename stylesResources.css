@@ -33,7 +33,7 @@ body {
     margin-bottom: 100px;
 }
 #heatmap div:nth-child(1) {
-    background-color: rgb(250, 194, 204); 
+    background-color: rgb(247, 183, 194); 
     width:50%;
 }
 #heatmap div:nth-child(2) {
