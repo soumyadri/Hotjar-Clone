@@ -3,7 +3,7 @@
     <head>
         <meta charset ="UTF-8">
         <meta name ="viewport" content="width= device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="files\styles.css">
+        <link rel="stylesheet" href="styles.css">
         <title>You privacy & Hotjar</title>
         <style>
         </style>
@@ -23,9 +23,8 @@
         <div id="pvc_pg">
             <div id="full">
                 <h1>Improving websites, for you.</h1>
-                <p>Online businesses use Hotjar to create better website experiences.</p>
-                <p id="new"></p>
-                <button id="btn0" onclick="moreP()">more</button>
+                <p>Online businesses use Hotjar to create better website experiences.<br><span id="dots"></span><span id="more">Nobody wants to waste their time on a website that is confusing and hard to navigate.<br><br>You know it, we know it, and website owners know it too—which is why they turn to Hotjar.<br><br>Website owners use Hotjar to better understand user behavior: what actions people take on a website, what elements of a page they click or ignore, what they enjoy, where they struggle.</p></span>
+                <button type="button" id="read" onclick="read()">more</button>
             </div>
             <div id="clr">
                 <img src="https://static-cms.hotjar.com/documents/privacy-7.svg"/>
@@ -35,49 +34,52 @@
         <div id="pvc_pg">
             <div id="full1">
                 <h1>We record interactions, not your sensitive data.</h1>
-                <p>Hotjar is designed for websites to get insights. And respect your privacy.</p>
-                <p id="new1"></p>
-                <button id= "btn1" onclick="moreP1()">more</button>
+                <p>Hotjar is designed for websites to get insights. And respect your privacy.<br><span id="dots1"></span><span id="more1">When you browse a website that has Hotjar installed, we collect data about your interactions (e.g. where you click, scroll your mouse, move in between pages) and use it to create visual representations of the experience.<br><br>Some Hotjar tools, like session recordings, reconstruct the individual actions you took during a website visit; others, like heatmaps, aggregate data points from you and hundreds of other visitors in one report.</span></p>
+                <button type="button" id="read1" onclick="read1()">more</button>
             </div>
             <div id="clr">
                 <img src="https://static-cms.hotjar.com/documents/privacy-5.svg"/>
             </div>
         </div>
+        <br/>
         <div id="pvc_pg">
-            <div>
+            <div id="full2">
                 <h1>We will never share or sell your data.</h1>
-                <p>Not to advertisers. Not to third-party services. Not to anyone.</p>
-                <button onclick="moreP()">More</button>
+                <p>Not to advertisers. Not to third-party services. Not to anyone.<br><span id="dots2"></span><span id="more2">Nobody here at Hotjar likes the idea of tools following us around different websites or companies sharing and selling our data without our permission. We are committed to making sure this doesn’t happen to you, either.<br><br>To learn more about data privacy, head over to our Privacy FAQs.</span></p>
+                <button type="button" id="read2" onclick="read2()">more</button>
             </div>
             <div id="clr">
                 <img src="https://static-cms.hotjar.com/documents/privacy-3.svg"/>
             </div>
         </div>
+        <br/>
         <div id="pvc_pg">
-            <div>
+            <div id="full3">
                 <h1>Request and access your data, anytime.</h1>
-                <p>Your data is stored securely, and you can ask to see it whenever you want.</p>
-                <button onclick="moreP()">More</button>
+                <p>Your data is stored securely, and you can ask to see it whenever you want.<br><span id="dots3"></span><span id="more3">As a website visitor, you have the right to request access to the personal identifiable information a website owner collected and stored about you.<br><br>At any time, you can request a website owner who uses Hotjar to give you access to your data. They can run a search for personal data from inside the Hotjar dashboard; the system will then generate and email you a report that lets you view, and delete, any data connected with you.<br><br>To learn more about data privacy and accessing your data, head over to our Privacy FAQs.</span></p>
+                <button type="button" id="read3" onclick="read3()">more</button>
             </div>
             <div id="clr">
                 <img src="https://static-cms.hotjar.com/documents/privacy-4.svg"/>
             </div>
         </div>
+        <br/>
         <div id="pvc_pg">
-            <div>
+            <div id="full4">
                 <h1>Tracking: we'll always give you options.</h1>
-                <p>If you prefer websites not to track data about your visit, we can help.</p>
-                <button onclick="moreP()">More</button>
+                <p>If you prefer websites not to track data about your visit, we can help.<br><span id="dots4"></span><span id="more4">If you want to stop a website using Hotjar from collecting data about your visit, you should know that the website owner is responsible for getting your consent to collect and process data about your visit. <br><br>But we understand that you might want Hotjar (and other tools) to not process data about you regardless of whether a site owner asks for permission or not, so we want to give you an extra option.<br><br>For more information about this take a look at our guide on how ‘Do Not Track’ in your browser works.</span></p>
+                <button type="button" id="read4" onclick="read4()">more</button>
             </div>
             <div id="clr">
                 <img src="https://static-cms.hotjar.com/documents/privacy-1.svg"/>
             </div>
         </div>
+        <br/>
         <div id="pvc_pg">
-            <div>
+            <div id="full5">
                 <h1>Compliance commitment: GDPR, CCPA, and more.</h1>
-                <p>Our customers can use Hotjar in a compliant manner, for you.</p>
-                <button onclick="moreP()">More</button>
+                <p>Our customers can use Hotjar in a compliant manner, for you.<br><span id="dots5"></span><span id="more5">We have followed a ‘privacy by design’ approach since our very first day, back in 2014, so we’re big supporters of privacy acts and regulations like the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and the Lei Geral de Proteção de Dados (LGPD) that enhance your privacy rights and protection as a consumer.<br><br>We have built the necessary controls around anonymity and consent to make sure website owners who use Hotjar can do it in a compliant manner.<br><br>You can read more about GDPR, CCPA, LGPD, and our other commitments over in our Compliance resources.</span></p>
+                <button type="button" id="read5" onclick="read5()">more</button>
             </div>
             <div id="clr">
                 <img src="https://static-cms.hotjar.com/documents/privacy-2.svg"/>
@@ -91,6 +93,6 @@
                 <button>Take me there</button>
             </div>
         </div>
-        <script src="buttons.js"></script>
+        <script src="newbutton.js"></script>
     </body>
 </html>
