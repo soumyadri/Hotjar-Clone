@@ -207,7 +207,7 @@ div > h3 {
 #pvc_pg {
     display: flex;
     width: 100%;
-    height: 560px;
+    min-height: 550px;
 }
 #pvc_pg > div{
     width:50%;
@@ -265,4 +265,7 @@ div > h3 {
     width:20%;
     height:40px;
     margin-left:40%
+}
+#more, #more1, #more2, #more3, #more4, #more5{
+    display: none;
 }
