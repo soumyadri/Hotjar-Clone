@@ -3,10 +3,13 @@ body{
 }
 #nav-bar{
     background-color: white;
-    width: 90%;
+    width: 95%;
     margin: auto;
     height: 90px;
     display: flex;
+}
+#nav-bar a:hover{
+    color: palevioletred;
 }
 .logo-img-nav{
     width: 35%;
@@ -31,12 +34,12 @@ li a, .dropbtn{
 }
 #nav-bar > div:nth-child(1){
     flex-grow: 1;
-    width: 15%;
+    width: 17%;
 }
 #nav-bar > div:nth-child(2){
     float: rigth;
     height: 90px;
-    flex-grow: 4;
+    flex-grow: 7;
 }
 
 
@@ -95,6 +98,12 @@ li a, .dropbtn{
     border-radius: 30px;
     border: 2px solid palevioletred;
     font-weight: 600;
+}
+.nav-button-1:hover{
+    color: black;
+}
+.nav-button-2:hover{
+    color: palevioletred;
 }
 
 
@@ -181,7 +190,6 @@ li a, .dropbtn{
 .highlight-word{
     background-color: greenyellow;
     border-radius: 50px 100px;
-
 }
 
 
@@ -495,3 +503,109 @@ img {vertical-align: middle;}
 .logo-p-footer{
     text-align: center;
 }
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1240px) {
+    .nav-button-1{
+        background-color: palevioletred;
+        padding: 2% 2%;
+        border-radius: 20px;
+        border: 1px solid palevioletred;
+        color: white;
+        font-weight: 500;
+    }
+    .nav-button-2{
+        background-color: rgb(243, 229, 233);
+        padding: 2.5% 2.2%;
+        border-radius: 20px;
+        border: 1px solid palevioletred;
+        font-weight: 300;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        margin-left: 2%;
+        padding-top: 3%;
+    }
+    li{
+        display: inline;
+        padding: 1.5%;
+    }
+    li a, .dropbtn{
+        text-decoration: none;
+        color: rgb(65, 63, 63);
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+    }
+    .logo-img-nav{
+        width: 45%;
+        margin-left: 10%;
+    }
+
+
+    /* content first */
+    #rigth-home{
+        width: 80%;
+    }
+
+    /* content first */
+    #home-front h2{
+        font-size: 40px;
+    }
+    #home-front h3{
+        font-size: 24px;
+    }
+    #home-front p{
+        font-size: 16px;
+    }
+    .button-front button:nth-child(1){
+        padding: 3%;
+        border-radius: 40px;
+        font-size: 20px;
+    }
+    .button-front button:nth-child(2){
+        padding: 3%;
+        border-radius: 40px;
+        font-size: 20px;
+    }
+
+
+    /* second div */
+    #second-div div{
+        display: flex;
+        flex-direction: row;
+        padding: 0.5%;
+        margin: 0.5% 2%;
+        font-size: 13px;
+        color: dimgray;
+        flex-grow: 1;
+    }
+    #second-div h3{
+        font-size: 30px;
+    }
+    #second-div h4{
+        font-size: 25px;
+    }
+
+    /* company partner */
+    #company-partner img{
+        width: 100%;
+    }
+
+    /* marketers */
+    #table-marketers h3{
+        font-size: 24px;
+    }
+
+    /* resize logo */
+    .h3-resize-logo{
+        font-size: 32px;
+    }
+  }
+
+
+
