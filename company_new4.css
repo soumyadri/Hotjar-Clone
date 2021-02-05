@@ -76,3 +76,41 @@
 .logo-p-footer{
     text-align: center;
 }
+
+@media only screen and (max-width: 1180px){
+    #layout_2{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 350px 350px 350px 350px;
+        justify-content: center;
+        margin-top: 60px;
+        width: 100%;  
+    }
+    p.name{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 800px){
+    #layout_2{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 350px;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px 350px;
+        justify-content: center;
+        margin-top: 80px;
+        width: 100%;  
+    }
+    #footer-div a{
+        font-size: 12px;
+    }
+    #footer-div h6{
+        font-size: 17px;
+    }
+    #footer-div{
+        grid-gap: 12px;
+    }
+    #footer-div div:nth-child(1){
+        margin-left: 15%;
+    }
+}
