@@ -1,0 +1,76 @@
+#layout_1{
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+    gap: 60px;
+}
+.paragraph_1,.paragraph_2,.paragraph_3{
+    flex: 1;
+    padding: 70px;
+}  
+.paragraph_1img,.paragraph_2img,.paragraph_3img{
+    flex: 1;
+    padding: 80px;
+    
+}
+.paragraph_1>h1,.paragraph_2>h1,.paragraph_3>h1{
+    font-size: 60px;
+}
+.paragraph_1>p,.paragraph_2>p1,.paragraph_3>p1{
+    font-size: 22px;
+}
+#layout_2{
+    width: 100%;
+    display: flex;
+    gap: 60px;
+}
+#layout_4{
+    width: 100%;
+    display: flex;
+    gap: 60px;
+}
+#layout_5{
+    text-align: center;
+    margin-top: 70px;
+}
+#footer-div{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 23% 23% 23% 23%;
+    background-color: rgba(241, 241, 241, 0.459);
+    color: rgb(71, 18, 18);
+    padding-bottom: 2%;
+    margin-top: 1%;
+}
+#footer-div h6{
+    font-size: 25px;
+}
+#footer-div a{
+    font-size: 20px;
+    text-decoration: solid;
+    color: rgb(48, 46, 46);
+    margin-bottom: 20px;
+}
+#footer-div div{
+    margin-left: 25%;
+}
+#footer-div a:hover{
+    color: palevioletred;
+}
+.logo-p-footer{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #layout_1,#layout_2,#layout_4,#footer-div {
+        display: block;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    #layout_1,#layout_2,#layout_4,#footer-div{
+        display: block;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+}
