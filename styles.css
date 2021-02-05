@@ -269,3 +269,23 @@ div > h3 {
 #more, #more1, #more2, #more3, #more4, #more5{
     display: none;
 }
+@media (max-width:900px) {
+    #pvc_pg {
+        display: block;
+    }
+    #pvc_pg > div{
+        width:100%;
+    }
+}
+
+@media (max-width:600px) {
+    #pvc_pg {
+        display: block;
+    }
+    #pvc_pg > div{
+        width:100%;
+    }
+    #pvc_pg > div > img {
+        width: 60%
+    }
+}
